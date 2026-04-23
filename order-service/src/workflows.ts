@@ -2,14 +2,21 @@ import { proxyActivities, sleep } from '@temporalio/workflow';
 import type * as activities from './activities';
 import { Order, WorkflowResult } from './shared';
 
-const timer = '2 seconds';
+const {
+  checkInventory,
+  processPayment,
+  shipPackage,
+  releaseInventory,
+  refundPayment } = proxyActivities<typeof activities>({
+    startToCloseTimeout: '1 minute',
+    retry: {
+      initialInterval: '10 second',
+      backoffCoefficient: 1.25,
+      maximumAttempts: 5, // Will fail after 5 tries and hit the catch block
+    },
+  });
 
-const { checkInventory, processPayment, shipPackage, releaseInventory, refundPayment } = proxyActivities<typeof activities>({
-  startToCloseTimeout: '1 minute',
-  retry: {
-    maximumAttempts: 5, // Will fail after 5 tries and hit the catch block
-  },
-});
+const timer = '2 seconds';
 
 export async function orderWorkflow(order: Order): Promise<WorkflowResult> {
   const compensations: (() => Promise<any>)[] = [];
@@ -18,12 +25,14 @@ export async function orderWorkflow(order: Order): Promise<WorkflowResult> {
     // 1. Check/Reserve Inventory
     await checkInventory(order);
     compensations.push(() => releaseInventory(order));
+
     await sleep(timer); // Simulate some time passing between steps
 
     // 2. Process Payment
     await processPayment(order);
     compensations.push(() => refundPayment(order));
-    await sleep(timer); 
+
+    await sleep(timer);
 
     // 3. Ship Package (This is set to fail)
     const trackingId = await shipPackage(order);
