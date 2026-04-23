@@ -4,6 +4,7 @@ import { Order, WorkflowResult } from './shared';
 
 const {
   checkInventory,
+  notifyCustomer,
   processPayment,
   shipPackage,
   releaseInventory,
@@ -17,37 +18,36 @@ const {
   });
 
 const timer = '2 seconds';
-
 export async function orderWorkflow(order: Order): Promise<WorkflowResult> {
   const compensations: (() => Promise<any>)[] = [];
+  let workflowStatus = 'COMPLETED';
+  let trackingId = ''; // Initialize a variable to hold the ID
 
   try {
-    // 1. Check/Reserve Inventory
     await checkInventory(order);
     compensations.push(() => releaseInventory(order));
-
-    await sleep(timer); // Simulate some time passing between steps
-
-    // 2. Process Payment
-    await processPayment(order);
-    compensations.push(() => refundPayment(order));
-
     await sleep(timer);
 
-    // 3. Ship Package (This is set to fail)
-    const trackingId = await shipPackage(order);
+    await processPayment(order);
+    compensations.push(() => refundPayment(order));
+    await sleep(timer);
 
-    return { success: true, message: `Order shipped: ${trackingId}` };
+    // Capture the result instead of returning immediately
+    trackingId = await shipPackage(order);
 
   } catch (err: any) {
     console.error(`Workflow failed: ${err.message}. Starting compensations...`);
+    workflowStatus = 'FAILED_AND_REFUNDED';
 
-    // Execute compensations in reverse order
     for (const compensate of compensations.reverse()) {
       await compensate();
     }
-
-    return { success: false, message: `Workflow failed and compensated: ${err.message}` };
   }
 
+  // Now this line WILL execute regardless of success or failure
+  await notifyCustomer(order, workflowStatus);
+
+  return workflowStatus === 'COMPLETED'
+    ? { success: true, message: `Order ${order.orderId} shipped, customer notified: ${trackingId}` }
+    : { success: false, message: `Order ${order.orderId} failed and was compensated.` };
 }

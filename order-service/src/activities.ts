@@ -31,3 +31,9 @@ export async function shipPackage(order: Order): Promise<string> {
   // throw new Error('Shipping service is currently unavailable'); // Simulate a failure
   return `TRK-${Math.random().toString(36).toUpperCase().substring(2, 9)}`;
 }
+
+export async function notifyCustomer(order: Order, status: string): Promise<void> {
+  console.log(`[Activity] Sending email to ${order.email}: Your order ${order.orderId} is ${status}.`);
+  // Mocking the email delay
+  await new Promise((resolve) => setTimeout(resolve, 500));
+}
