@@ -1,0 +1,172 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36">
+  <diagram name="Page-1" id="Po4MIQtzmtm9usAGkfhf">
+    <mxGraphModel dx="890" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="F2wiO5UbAtaO1pveUraH-15" edge="1" parent="1" source="F2wiO5UbAtaO1pveUraH-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="F2wiO5UbAtaO1pveUraH-3" value="Start Workflow">
+          <mxGeometry relative="1" x="-0.6469" y="-10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;shadow=1;" value="&lt;b&gt;Client&lt;/b&gt;&lt;div&gt;Order initiator&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="177.37" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;div&gt;Temporal SA Tech assignment - HLA&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="520" x="34" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-5" edge="1" parent="1" source="F2wiO5UbAtaO1pveUraH-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" target="F2wiO5UbAtaO1pveUraH-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-6" connectable="0" parent="F2wiO5UbAtaO1pveUraH-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="State Persistance&lt;div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;Workflow Execution&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-size: 8px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;record&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2848" y="-3" as="geometry">
+            <mxPoint x="25" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-16" edge="1" parent="1" source="F2wiO5UbAtaO1pveUraH-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" target="F2wiO5UbAtaO1pveUraH-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-17" connectable="0" parent="F2wiO5UbAtaO1pveUraH-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Workflow Task" vertex="1">
+          <mxGeometry relative="1" x="-0.2298" y="2" as="geometry">
+            <mxPoint x="38" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;shadow=1;" value="&lt;b&gt;Temporal Cluster&lt;/b&gt;&lt;div&gt;Frontend / Backend&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="180" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" value="&lt;div&gt;&lt;b&gt;Persistent Store&lt;/b&gt;&lt;/div&gt;&lt;div&gt;SQLite DB&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="110" x="435" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-18" edge="1" parent="1" source="F2wiO5UbAtaO1pveUraH-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="F2wiO5UbAtaO1pveUraH-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-19" connectable="0" parent="F2wiO5UbAtaO1pveUraH-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Poll Queue" vertex="1">
+          <mxGeometry relative="1" x="-0.2209" as="geometry">
+            <mxPoint x="-9" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;shadow=1;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;TypeScript (SDK) Worker&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Workflow &amp;amp; Activities&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="400" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-8" parent="1" style="shape=mxgraph.signs.healthcare.brain;html=1;pointerEvents=1;fillColor=#f5f5f5;strokeColor=#666666;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontColor=#333333;" value="&lt;span style=&quot;color: rgb(0, 0, 0); white-space: normal;&quot;&gt;Workflow&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0); white-space: normal;&quot;&gt;Brain&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="41.25" width="45" x="425" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-9" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/analytics/Event_Hub_Clusters.svg;labelBackgroundColor=none;" value="Activity&amp;nbsp;&lt;div&gt;Task&lt;/div&gt;" vertex="1">
+          <mxGeometry height="43.88" width="54" x="500" y="237.37" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-13" parent="1" style="strokeColor=#dddddd;fillColor=#FFFFFF;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;" value="" vertex="1">
+          <mxGeometry height="44" width="120" x="210" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-14" parent="F2wiO5UbAtaO1pveUraH-13" style="sketch=0;dashed=0;connectable=0;html=1;fillColor=#757575;strokeColor=none;shape=mxgraph.gcp2.task_queues;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;" value="Task&lt;br&gt;Queue" vertex="1">
+          <mxGeometry height="32" relative="1" width="32" y="0.5" as="geometry">
+            <mxPoint x="5" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-26" edge="1" parent="1" source="F2wiO5UbAtaO1pveUraH-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;fontSize=10;align=center;" target="F2wiO5UbAtaO1pveUraH-23" value="Execute workflow">
+          <mxGeometry relative="1" x="-0.138" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="190" y="460" />
+              <mxPoint x="190" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-20" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Client" vertex="1">
+          <mxGeometry height="280" width="100" x="70" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-21" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=14;" value="&lt;span&gt;Order sequence diagram&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="270" x="40" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-22" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=14;labelBackgroundColor=none;" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Separation of Logic and State&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="270" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-28" edge="1" parent="1" source="F2wiO5UbAtaO1pveUraH-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;fontSize=10;" target="F2wiO5UbAtaO1pveUraH-24" value="Store workflow">
+          <mxGeometry relative="1" x="-0.4537" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-29" edge="1" parent="1" source="F2wiO5UbAtaO1pveUraH-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;fontSize=10;" target="F2wiO5UbAtaO1pveUraH-27" value="Place task">
+          <mxGeometry relative="1" x="-0.7034" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="360" y="510" />
+              <mxPoint x="360" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-38" edge="1" parent="1" source="F2wiO5UbAtaO1pveUraH-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" target="F2wiO5UbAtaO1pveUraH-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="650" />
+              <mxPoint x="320" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-39" connectable="0" parent="F2wiO5UbAtaO1pveUraH-38" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="Complete Workflow" vertex="1">
+          <mxGeometry relative="1" x="0.5151" y="2" as="geometry">
+            <mxPoint x="-23" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-40" edge="1" parent="1" source="F2wiO5UbAtaO1pveUraH-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" target="F2wiO5UbAtaO1pveUraH-20" value="Notify client">
+          <mxGeometry relative="1" x="-0.4347" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="190" y="660" />
+              <mxPoint x="190" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-23" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Cluster" vertex="1">
+          <mxGeometry height="280" width="100" x="210" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-24" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="DB Store" vertex="1">
+          <mxGeometry height="280" width="65" x="325" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-30" edge="1" parent="1" source="F2wiO5UbAtaO1pveUraH-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" target="F2wiO5UbAtaO1pveUraH-27" value="Poll queue">
+          <mxGeometry relative="1" x="-0.3893" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="530" y="540" />
+              <mxPoint x="530" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-36" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" target="F2wiO5UbAtaO1pveUraH-23" value="Notify cluster">
+          <mxGeometry relative="1" x="-0.8082" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="430" y="620" />
+              <mxPoint x="430" y="620" />
+            </Array>
+            <mxPoint x="573.5" y="620" as="sourcePoint" />
+            <mxPoint x="119.78571428571422" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-25" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlControl;fontSize=9;" value="Worker" vertex="1">
+          <mxGeometry height="290" width="40" x="554" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-31" edge="1" parent="1" source="F2wiO5UbAtaO1pveUraH-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;dashed=1;" target="F2wiO5UbAtaO1pveUraH-25" value="receive Task">
+          <mxGeometry relative="1" x="-0.3398" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="520" y="570" />
+              <mxPoint x="520" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-27" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Queue" vertex="1">
+          <mxGeometry height="220" width="100" x="414" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="F2wiO5UbAtaO1pveUraH-35" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" value="Execute">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="610" />
+            </Array>
+            <mxPoint x="573.7857142857144" y="580" as="sourcePoint" />
+            <mxPoint x="573.7857142857144" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
