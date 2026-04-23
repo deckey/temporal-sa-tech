@@ -1,0 +1,9 @@
+temporal-sa topics
+
+# Reliability
+- introduce an error into one of the activities
+- observe worker retrying to complete the task and failing
+- remove the error or block
+- restart worker only, keep workflow running.
+
+

@@ -5,3 +5,9 @@ export interface Order {
   email: string;
   amount: number;
 }
+
+// Adding a result type helps keep our Saga logic clean
+export interface WorkflowResult {
+  success: boolean;
+  message: string;
+}

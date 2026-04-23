@@ -11,7 +11,6 @@
     "lint": "eslint .",
     "start": "node --loader ts-node/esm src/worker.ts",
     "worker": "ts-node src/worker.ts",
-    "client": "ts-node src/client.ts",
     "ui": "temporal server start-dev",
     "start.watch": "nodemon src/worker.ts",
     "workflow": "node --loader ts-node/esm src/client.ts",
